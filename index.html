@@ -1,9 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body></body>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Contatos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Agenda de Contatos</h1>
+        <p>Insira o nome e o telefone do contato. Clique em "Cadastrar" para adicionar à lista. Utilize o botão
+            "Excluir" para remover um contato específico ou "Apagar todos os contatos" para limpar a lista.</p>
+        <form id="contactForm">
+            <input type="text" id="nameInput" placeholder="Nome" required>
+            <input type="tel" id="phoneInput" placeholder="Telefone" required>
+            <button type="submit">Cadastrar</button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="contactTable">
+            </tbody>
+        </table>
+        <button id="clearAllBtn">Apagar todos os contatos</button>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
 </html>
